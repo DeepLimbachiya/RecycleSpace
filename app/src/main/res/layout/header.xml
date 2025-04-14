@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:background="#1597E5"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/itr_for_professionals__2_"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycle Design Space"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Marketplace for Eco-Friendly Creations"
+        android:textColor="@color/white"
+        android:fontFamily="@font/oswald_light"
+        android:textSize="16sp"
+        android:layout_marginTop="-5dp"/>
+
+
+</LinearLayout>

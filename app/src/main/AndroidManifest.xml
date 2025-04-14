@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taxio">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/itr_for_professionals__2_"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/itr_for_professionals__2_"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Taxio">
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Buyer"
+            android:exported="true" />
+        <activity
+            android:name=".Business"
+            android:exported="true" />
+        <activity
+            android:name=".Job"
+            android:exported="true" />
+        <activity
+            android:name=".WhatIsITR"
+            android:exported="true" />
+        <activity
+            android:name=".Seller"
+            android:exported="true" />
+        <activity
+            android:name=".FindCAs"
+            android:exported="true" >
+
+    </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".FileITR"
+            android:exported="true" />
+        <activity
+            android:name=".CalculateTaxAct"
+            android:exported="true" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".CalculateTaxAct">
+
+    <RelativeLayout
+
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="#1597E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/itr_for_professionals__2_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/im1"
+            android:fontFamily="@font/fredoka_one"
+            android:text="RecycleDesignSpace"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/im1"
+            android:fontFamily="@font/oswald_light"
+            android:text="Your Marketplace for \nEco-Friendly Creations"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Benefits of Recycling"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• Resource Conservation: Recycling reduces the need for extracting, refining, and processing raw materials, conserving natural resources and reducing the environmental impact of resource extraction. According to the EPA, recycling one ton of aluminum can save up to 8 tons of bauxite ore and 14,000 kilowatt-hours of energy."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• Pollution Reduction: Recycling reduces pollution by decreasing the amount of waste sent to landfills, which can release harmful gases such as methane and carbon dioxide. Recycling can also reduce water pollution by minimizing the need for new material extraction, which often leads to runoff and pollution."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="• Energy Savings: Recycling saves energy by reducing the need for the energy-intensive process of extracting, refining, and processing raw materials. For example, recycling one ton of paper can save up to 4,100 kilowatt-hours of energy, resulting in significant energy savings and reduced greenhouse gas emissions."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Job">
+
+    <RelativeLayout
+
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="#1597E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/itr_for_professionals__2_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/im1"
+            android:fontFamily="@font/fredoka_one"
+            android:text="RecycleDesignSpace"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/im1"
+            android:fontFamily="@font/oswald_light"
+            android:text="Your Marketplace for \nEco-Friendly Creations"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Recycling: Process, Appeal, and Misconceptions"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• Recycling is the process of converting waste products into reusable materials, different from reuse, which simply means using a product again. \n\n• According to the Environmental Protection Agency (EPA), about 30 percent of U.S. solid waste is recycled. About 15 percent is incinerated, and about 55 percent goes into landfills."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• Recycling is appealing because it offers a way to reduce the amount of waste disposed of in landfills and save natural resources. \n\n• By 2000, the recycling rate had nearly doubled from the 1990 rate of 16 percent. A big portion of the increase has been in yard trimmings and food scraps collected for composting."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="• Recycling is not always economically efficient or environmentally helpful, partly due to misconceptions. \n\n• One misconception is that landfills and incinerators are environmentally risky. Today, landfills are designed to keep their contents dry, and monitoring programs ensure any leakage is caught before it causes harm. \n\n• Another misconception is that we are running out of landfill space. Economist Daniel Benjamin reported that the fear of running out of landfill space stemmed from an EPA study in the 1980s that counted landfills rather than landfill capacity. \n\n• People tend to overestimate how much space is required to bury trash. Statistician Bjørn Lomborg calculated that a ten-mile-square, 255-foot-deep landfill could contain all the trash produced in the United States over the next century."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

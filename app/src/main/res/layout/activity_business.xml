@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    tools:context=".Business">
+
+    <RelativeLayout
+
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="#1597E5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/itr_for_professionals__2_" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/im1"
+            android:fontFamily="@font/fredoka_one"
+            android:text="RecycleDesignSpace"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@+id/im1"
+            android:fontFamily="@font/oswald_light"
+            android:text="Your Marketplace for \nEco-Friendly Creations"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Recycling Economics and Environmental Impact"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/l12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• In the absence of government regulation, the economics of each material determines how much of it is recycled. \n\n• About 55 percent of all aluminum cans were recycled in 2000. Recycling of beverage cans goes back to 1968, when the Reynolds Metals Company started a pilot project. \n\n• Energy prices began to rise during the 1970s and, because producing new aluminum from bauxite requires large amounts of energy, recycling aluminum cans became economically attractive."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• About 56 percent of paper and cardboard was recycled in 2000. \n\n• Recycling is economically rewarding because cardboard can be made from a wide variety of used paper. \n\n• Many places, such as supermarkets and discount stores, use large quantities of corrugated boxes, reducing collection costs."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:text="• In contrast, only about 9 percent of plastic packaging is recycled. \n\n• Different plastic resins cannot be mixed together and reprocessed, so plastics must be separated if they are to be recycled. \n\n• The relatively low cost of producing new plastic from oil-based petrochemicals makes recycling less economically rewarding."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="• Ironically, recycling does not eliminate environmental worries. \n\n• Recycling is a manufacturing process that can produce pollution. An EPA study found toxic chemicals in both recycling and virgin paper processing. \n\n• Curbside recycling programs require additional trucks, which use more energy and create more pollution."
+                android:textAlignment="center"
+                android:textColor="#555555"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "720167004623",
+    "project_id": "taxio-fa452",
+    "storage_bucket": "taxio-fa452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720167004623:android:c9a16be946cd66021c8aba",
+        "android_client_info": {
+          "package_name": "com.example.taxio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720167004623-b4ljglj8ur4i2p69uoiqoq0n9vh0csme.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn1zKiMv7LDPga0nu9-zLuNiZdrrYY7lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720167004623-b4ljglj8ur4i2p69uoiqoq0n9vh0csme.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
